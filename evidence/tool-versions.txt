@@ -2,3 +2,47 @@
 git version 2.53.0
 --- Docker ---
 Docker version 29.7.2, build a7dcaa6
+--- Analysis tools (inside Docker image bi131-week3) ---
+FastQC:
+FastQC v0.13.0
+BWA:
+Version: 0.7.19-r1273
+SAMtools:
+samtools 1.24
+BCFtools:
+bcftools 1.24
+htslib bgzip:
+bgzip (htslib) 1.24
+GATK:
+HTSJDK Version: 4.2.0
+Picard Version: 3.4.0
+SnpEff:
+SnpEff	5.2	2023-09-29
+Java:
+openjdk version "25.0.2-internal" 2026-01-20
+--- SnpEff database GRCh38.105 present? ---
+/opt/conda/share/snpeff-5.2-3/data/GRCh38.105
+/opt/conda/share/snpeff-5.2-3/data/GRCh38.105/sequence.10.bin
+/opt/conda/share/snpeff-5.2-3/data/GRCh38.105/sequence.11.bin
+/opt/conda/share/snpeff-5.2-3/data/GRCh38.105/sequence.17.bin
+/opt/conda/share/snpeff-5.2-3/data/GRCh38.105/sequence.14.bin
+--- Mounted project visible in /work ---
+Dockerfile
+README.md
+data
+evidence
+reference
+results
+--- GATK full version ---
+Using GATK jar /opt/conda/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /opt/conda/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar --version
+The Genome Analysis Toolkit (GATK) v4.6.2.0
+HTSJDK Version: 4.2.0
+Picard Version: 3.4.0
+--- GATK runs a real tool? (MarkDuplicates help) ---
+Using GATK jar /opt/conda/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /opt/conda/share/gatk4-4.6.2.0-1/gatk-package-4.6.2.0-local.jar MarkDuplicates --help
+USAGE: MarkDuplicates [arguments]
+

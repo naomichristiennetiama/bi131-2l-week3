@@ -1,0 +1,450 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 400B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/mambaorg/micromamba:2.3.2
+#2 DONE 4.7s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/mambaorg/micromamba:2.3.2@sha256:ce2026639d612fbe837a35ca9d513292a8d776a24a5e6c82cccf9dddf45ad3d2
+#4 resolve docker.io/mambaorg/micromamba:2.3.2@sha256:ce2026639d612fbe837a35ca9d513292a8d776a24a5e6c82cccf9dddf45ad3d2 0.0s done
+#4 CACHED
+
+#5 [2/4] RUN micromamba install -y -n base -c conda-forge -c bioconda     bash     coreutils     procps-ng     fastqc     bwa     samtools     bcftools     gatk4     snpeff=5.2     htslib     && micromamba clean --all --yes
+#5 26.10 
+#5 27.77 
+#5 27.77 Transaction
+#5 27.77 
+#5 27.77   Prefix: /opt/conda
+#5 27.77 
+#5 27.77   Updating specs:
+#5 27.77 
+#5 27.77    - bash
+#5 27.77    - coreutils
+#5 27.77    - procps-ng
+#5 27.77    - fastqc
+#5 27.77    - bwa
+#5 27.77    - samtools
+#5 27.77    - bcftools
+#5 27.77    - gatk4
+#5 27.77    - snpeff=5.2
+#5 27.77    - htslib
+#5 27.77 
+#5 27.77 
+#5 28.12   Package                           Version  Build                 Channel          Size
+#5 28.12 ──────────────────────────────────────────────────────────────────────────────────────────
+#5 28.12   Install:
+#5 28.12 ──────────────────────────────────────────────────────────────────────────────────────────
+#5 28.12 
+#5 28.12   + _openmp_mutex                       4.5  20_gnu                conda-forge      29kB
+#5 28.12   + alsa-lib                       1.2.16.1  h7cc23a3_1            conda-forge     595kB
+#5 28.12   + bash                             5.2.37  h4be8908_0            conda-forge       2MB
+#5 28.12   + bcftools                           1.24  h118bc1c_4            bioconda        965kB
+#5 28.12   + bwa                              0.7.19  h577a1d6_1            bioconda        654kB
+#5 28.12   + bzip2                             1.0.8  hda65f42_10           conda-forge     258kB
+#5 28.12   + c-ares                           1.34.8  hebe6cf0_2            conda-forge     229kB
+#5 28.12   + ca-certificates               2026.7.22  hbd8a1cb_0            conda-forge     132kB
+#5 28.12   + cairo                            1.18.6  h3c89d7e_0            conda-forge       1MB
+#5 28.12   + coreutils                          9.12  hebe6cf0_0            conda-forge       3MB
+#5 28.12   + fastqc                           0.13.0  hdfd78af_0            bioconda         13MB
+#5 28.12   + font-ttf-dejavu-sans-mono          2.37  hab24e00_0            conda-forge     397kB
+#5 28.12   + font-ttf-inconsolata              3.000  h77eed37_0            conda-forge      97kB
+#5 28.12   + font-ttf-source-code-pro          2.038  h77eed37_0            conda-forge     701kB
+#5 28.12   + font-ttf-ubuntu                    0.83  h77eed37_3            conda-forge       2MB
+#5 28.12   + fontconfig                       2.18.3  h4db4eae_1            conda-forge     296kB
+#5 28.12   + fonts-conda-ecosystem                 1  0                     conda-forge       4kB
+#5 28.12   + fonts-conda-forge                     1  hc364b38_1            conda-forge       4kB
+#5 28.12   + gatk4                           4.6.2.0  py310hdfd78af_1       bioconda        392MB
+#5 28.12   + giflib                            6.1.3  hebe6cf0_2            conda-forge      86kB
+#5 28.12   + graphite2                        1.3.15  h54a6638_1            conda-forge     103kB
+#5 28.12   + gsl                                 2.6  he838d99_2            conda-forge       3MB
+#5 28.12   + htslib                             1.24  ha79157c_0            bioconda          1MB
+#5 28.12   + icu                                78.3  py310h44b86e0_2       conda-forge      14MB
+#5 28.12   + keyutils                          1.6.3  h7cc23a3_1            conda-forge     135kB
+#5 28.12   + krb5                             1.22.2  hbc21106_2            conda-forge       1MB
+#5 28.12   + lcms2                            2.19.1  h9073bf1_3            conda-forge     254kB
+#5 28.12   + ld_impl_linux-64                 2.46.1  default_hbd61a6d_103  conda-forge     742kB
+#5 28.12   + lerc                              4.2.0  hdb68285_0            conda-forge     271kB
+#5 28.12   + libblas                          3.11.0  11_h4a7cf45_openblas  conda-forge      18kB
+#5 28.12   + libcblas                         3.11.0  11_h0358290_openblas  conda-forge      18kB
+#5 28.12   + libcups                           2.3.3  h7a8fb5f_6            conda-forge       5MB
+#5 28.12   + libcurl                          8.23.0  ha042cf0_0            conda-forge     506kB
+#5 28.12   + libdeflate                         1.25  hd45a770_1            conda-forge      74kB
+#5 28.12   + libedit                    3.1.20260512  pl5321h373387f_0      conda-forge     136kB
+#5 28.12   + libev                              4.33  h280c20c_3            conda-forge      43kB
+#5 28.12   + libexpat                          2.8.5  hd2095e1_0            conda-forge      78kB
+#5 28.12   + libffi                            3.7.0  h81df57d_1            conda-forge      68kB
+#5 28.12   + libfreetype                      2.14.3  ha770c72_2            conda-forge       8kB
+#5 28.12   + libfreetype6                     2.14.3  h5e6c136_2            conda-forge     388kB
+#5 28.12   + libgcc                           16.2.0  ha9f2e26_7            conda-forge       1MB
+#5 28.12   + libgcc-ng                        16.2.0  h69a702a_7            conda-forge      29kB
+#5 28.12   + libgfortran                      16.2.0  h69a702a_7            conda-forge      29kB
+#5 28.12   + libgfortran5                     16.2.0  h6b99dfc_7            conda-forge       3MB
+#5 28.12   + libglib                          2.90.0  h569388d_0            conda-forge       5MB
+#5 28.12   + libgomp                          16.2.0  he0feb66_7            conda-forge     641kB
+#5 28.12   + libharfbuzz                      14.6.0  h23af247_2            conda-forge       1MB
+#5 28.12   + libiconv                           1.18  h0cb94f2_3            conda-forge     789kB
+#5 28.12   + libjpeg-turbo                     3.2.0  hb03c661_1            conda-forge     650kB
+#5 28.12   + liblzma                           5.8.3  hb03c661_1            conda-forge     113kB
+#5 28.12   + liblzma-devel                     5.8.3  hb03c661_1            conda-forge     492kB
+#5 28.12   + libnghttp2                       1.68.1  h74cf4be_1            conda-forge     650kB
+#5 28.12   + libnsl                            2.0.1  hb9d3cd8_1            conda-forge      34kB
+#5 28.12   + libopenblas                      0.3.34  pthreads_hf13c14d_2   conda-forge       7MB
+#5 28.12   + libpng                           1.6.59  h922cc85_0            conda-forge     317kB
+#5 28.12   + libpsl                           0.23.1  hd9e3e90_1            conda-forge      73kB
+#5 28.12   + libsqlite                        3.54.0  h13e7031_1            conda-forge     984kB
+#5 28.12   + libssh2                          1.11.1  h6154650_1            conda-forge     306kB
+#5 28.12   + libstdcxx                        16.2.0  h934c35e_7            conda-forge       7MB
+#5 28.12   + libtiff                           4.7.2  hcc2c06a_1            conda-forge     460kB
+#5 28.12   + libuuid                          2.42.4  hcfc3c73_0            conda-forge      34kB
+#5 28.12   + libwebp-base                      1.6.0  hd42ef1d_1            conda-forge     428kB
+#5 28.12   + libxcb                           1.17.0  hb83e432_2            conda-forge     395kB
+#5 28.12   + libxcrypt                        4.4.38  h280c20c_0            conda-forge     102kB
+#5 28.12   + libzlib                           1.3.2  h25fd6f3_3            conda-forge      64kB
+#5 28.12   + ncurses                             6.6  hdb14827_1            conda-forge     911kB
+#5 28.12   + openjdk                          25.0.2  h1602c4f_26           conda-forge     123MB
+#5 28.12   + openssl                           3.6.5  h781a0a9_0            conda-forge       3MB
+#5 28.12   + packaging                          26.3  pyhc364b38_0          conda-forge     116kB
+#5 28.12   + pcre2                             10.47  h8b3dc9c_1            conda-forge       1MB
+#5 28.12   + perl                             5.44.0  1_h7cc23a3_perl5      conda-forge      11MB
+#5 28.12   + pip                              26.2.1  pyh8b19718_0          conda-forge       1MB
+#5 28.12   + pixman                           0.46.4  h54a6638_3            conda-forge     377kB
+#5 28.12   + procps-ng                         4.0.6  h18c060e_0            conda-forge     594kB
+#5 28.12   + pthread-stubs                       0.4  h7cc23a3_1004         conda-forge      10kB
+#5 28.12   + python                          3.10.22  h267e890_0_cpython    conda-forge      25MB
+#5 28.12   + readline                            8.3  hd6e31c0_1            conda-forge     349kB
+#5 28.12   + samtools                           1.24  h9dcdb79_1            bioconda        504kB
+#5 28.12   + setuptools                       84.0.0  pyh332efcf_0          conda-forge     524kB
+#5 28.12   + snpeff                              5.2  hdfd78af_3            bioconda         27MB
+#5 28.12   + tk                               8.6.13  noxft_h1df4ec4_4      conda-forge       4MB
+#5 28.12   + tzdata                            2026c  h151e31d_0            conda-forge     119kB
+#5 28.12   + wheel                            0.48.0  pyhd8ed1ab_0          conda-forge      35kB
+#5 28.12   + xorg-libice                       1.1.2  h280c20c_0            conda-forge      63kB
+#5 28.12   + xorg-libsm                        1.2.6  h0d788c3_1            conda-forge      31kB
+#5 28.12   + xorg-libx11                      1.8.13  he1eb515_1            conda-forge     840kB
+#5 28.12   + xorg-libxau                      1.0.12  h7cc23a3_2            conda-forge      19kB
+#5 28.12   + xorg-libxdmcp                     1.1.5  h7cc23a3_2            conda-forge      23kB
+#5 28.12   + xorg-libxext                      1.3.7  h7cc23a3_1            conda-forge      53kB
+#5 28.12   + xorg-libxfixes                    6.0.2  h7cc23a3_1            conda-forge      21kB
+#5 28.12   + xorg-libxi                        1.8.3  h7cc23a3_1            conda-forge      49kB
+#5 28.12   + xorg-libxrandr                    1.5.5  h7cc23a3_1            conda-forge      31kB
+#5 28.12   + xorg-libxrender                  0.9.12  hb03c661_1            conda-forge      35kB
+#5 28.12   + xorg-libxt                        1.3.1  h7cc23a3_1            conda-forge     384kB
+#5 28.12   + xorg-libxtst                      1.2.5  h7cc23a3_4            conda-forge      35kB
+#5 28.12   + xz                                5.8.3  ha02ee65_1            conda-forge      24kB
+#5 28.12   + xz-gpl-tools                      5.8.3  ha02ee65_1            conda-forge      40kB
+#5 28.12   + xz-tools                          5.8.3  hb03c661_1            conda-forge      96kB
+#5 28.12   + zlib                              1.3.2  h25fd6f3_3            conda-forge      96kB
+#5 28.12   + zstd                              1.5.7  hb78ec9c_7            conda-forge     601kB
+#5 28.12 
+#5 28.12   Summary:
+#5 28.12 
+#5 28.12   Install: 100 packages
+#5 28.12 
+#5 28.12   Total download: 677MB
+#5 28.12 
+#5 28.12 ──────────────────────────────────────────────────────────────────────────────────────────
+#5 28.12 
+#5 28.12 
+#5 28.13 
+#5 28.13 Transaction starting
+#5 90.69 Linking font-ttf-dejavu-sans-mono-2.37-hab24e00_0
+#5 90.69 Linking font-ttf-ubuntu-0.83-h77eed37_3
+#5 90.69 Linking font-ttf-inconsolata-3.000-h77eed37_0
+#5 90.69 Linking font-ttf-source-code-pro-2.038-h77eed37_0
+#5 90.69 Linking ca-certificates-2026.7.22-hbd8a1cb_0
+#5 90.69 Linking tzdata-2026c-h151e31d_0
+#5 90.74 Linking fonts-conda-forge-1-hc364b38_1
+#5 90.74 Linking fonts-conda-ecosystem-1-0
+#5 90.74 Linking libzlib-1.3.2-h25fd6f3_3
+#5 90.74 Linking libgomp-16.2.0-he0feb66_7
+#5 90.74 Linking zstd-1.5.7-hb78ec9c_7
+#5 90.75 Linking zlib-1.3.2-h25fd6f3_3
+#5 90.75 Linking _openmp_mutex-4.5-20_gnu
+#5 90.75 Linking ld_impl_linux-64-2.46.1-default_hbd61a6d_103
+#5 90.79 Linking libgcc-16.2.0-ha9f2e26_7
+#5 90.79 Linking xorg-libxdmcp-1.1.5-h7cc23a3_2
+#5 90.79 Linking xorg-libxau-1.0.12-h7cc23a3_2
+#5 90.80 Linking xorg-libice-1.1.2-h280c20c_0
+#5 90.80 Linking libev-4.33-h280c20c_3
+#5 90.80 Linking c-ares-1.34.8-hebe6cf0_2
+#5 90.82 Linking libgfortran5-16.2.0-h6b99dfc_7
+#5 90.82 Linking libwebp-base-1.6.0-hd42ef1d_1
+#5 90.82 Linking pthread-stubs-0.4-h7cc23a3_1004
+#5 90.82 Linking tk-8.6.13-noxft_h1df4ec4_4
+#5 90.89 Linking libnsl-2.0.1-hb9d3cd8_1
+#5 90.89 Linking libdeflate-1.25-hd45a770_1
+#5 90.89 Linking bzip2-1.0.8-hda65f42_10
+#5 90.89 Linking libuuid-2.42.4-hcfc3c73_0
+#5 90.90 Linking libexpat-2.8.5-hd2095e1_0
+#5 90.90 Linking keyutils-1.6.3-h7cc23a3_1
+#5 90.91 Linking libiconv-1.18-h0cb94f2_3
+#5 90.93 Linking libffi-3.7.0-h81df57d_1
+#5 90.93 Linking libjpeg-turbo-3.2.0-hb03c661_1
+#5 90.94 Linking libpng-1.6.59-h922cc85_0
+#5 90.94 Linking giflib-6.1.3-hebe6cf0_2
+#5 90.94 Linking alsa-lib-1.2.16.1-h7cc23a3_1
+#5 90.97 Linking ncurses-6.6-hdb14827_1
+#5 92.75 Linking libgcc-ng-16.2.0-h69a702a_7
+#5 92.76 Linking openssl-3.6.5-h781a0a9_0
+#5 92.82 Linking liblzma-5.8.3-hb03c661_1
+#5 92.82 Linking libstdcxx-16.2.0-h934c35e_7
+#5 92.83 Linking coreutils-9.12-hebe6cf0_0
+#5 92.94 Linking libxcrypt-4.4.38-h280c20c_0
+#5 92.94 Linking libgfortran-16.2.0-h69a702a_7
+#5 92.94 Linking libxcb-1.17.0-hb83e432_2
+#5 92.96 Linking pcre2-10.47-h8b3dc9c_1
+#5 92.98 Linking xorg-libsm-1.2.6-h0d788c3_1
+#5 92.98 Linking libfreetype6-2.14.3-h5e6c136_2
+#5 92.98 Linking readline-8.3-hd6e31c0_1
+#5 92.98 Linking libedit-3.1.20260512-pl5321h373387f_0
+#5 92.99 Linking procps-ng-4.0.6-h18c060e_0
+#5 93.00 Linking libssh2-1.11.1-h6154650_1
+#5 93.02 Linking xz-tools-5.8.3-hb03c661_1
+#5 93.02 Linking xz-gpl-tools-5.8.3-ha02ee65_1
+#5 93.02 Linking liblzma-devel-5.8.3-hb03c661_1
+#5 93.08 Linking graphite2-1.3.15-h54a6638_1
+#5 93.09 Linking icu-78.3-py310h44b86e0_2
+#5 93.11 Linking libnghttp2-1.68.1-h74cf4be_1
+#5 93.11 Linking pixman-0.46.4-h54a6638_3
+#5 93.11 Linking lerc-4.2.0-hdb68285_0
+#5 93.11 Linking perl-5.44.0-1_h7cc23a3_perl5
+#5 93.58 Linking libopenblas-0.3.34-pthreads_hf13c14d_2
+#5 93.58 Linking xorg-libx11-1.8.13-he1eb515_1
+#5 93.63 Linking libglib-2.90.0-h569388d_0
+#5 93.73 Linking libfreetype-2.14.3-ha770c72_2
+#5 93.73 Linking bash-5.2.37-h4be8908_0
+#5 93.75 Linking krb5-1.22.2-hbc21106_2
+#5 93.79 Linking xz-5.8.3-ha02ee65_1
+#5 93.79 Linking libpsl-0.23.1-hd9e3e90_1
+#5 93.80 Linking libsqlite-3.54.0-h13e7031_1
+#5 93.80 Linking libtiff-4.7.2-hcc2c06a_1
+#5 93.80 Linking libblas-3.11.0-11_h4a7cf45_openblas
+#5 94.02 Linking xorg-libxfixes-6.0.2-h7cc23a3_1
+#5 94.02 Linking xorg-libxt-1.3.1-h7cc23a3_1
+#5 94.04 Linking xorg-libxrender-0.9.12-hb03c661_1
+#5 94.04 Linking xorg-libxext-1.3.7-h7cc23a3_1
+#5 94.04 Linking fontconfig-2.18.3-h4db4eae_1
+#5 94.06 Linking libcups-2.3.3-h7a8fb5f_6
+#5 94.07 Linking libcurl-8.23.0-ha042cf0_0
+#5 94.08 Linking python-3.10.22-h267e890_0_cpython
+#5 94.78 Linking lcms2-2.19.1-h9073bf1_3
+#5 94.78 Linking libcblas-3.11.0-11_h0358290_openblas
+#5 94.84 Linking xorg-libxrandr-1.5.5-h7cc23a3_1
+#5 94.84 Linking xorg-libxi-1.8.3-h7cc23a3_1
+#5 94.84 Linking cairo-1.18.6-h3c89d7e_0
+#5 94.85 Linking gsl-2.6-he838d99_2
+#5 94.92 Linking xorg-libxtst-1.2.5-h7cc23a3_4
+#5 94.92 Linking libharfbuzz-14.6.0-h23af247_2
+#5 94.92 Linking openjdk-25.0.2-h1602c4f_26
+#5 97.18 Linking bwa-0.7.19-h577a1d6_1
+#5 97.18 Linking htslib-1.24-ha79157c_0
+#5 97.24 Linking samtools-1.24-h9dcdb79_1
+#5 97.25 Linking bcftools-1.24-h118bc1c_4
+#5 97.26 Linking packaging-26.3-pyhc364b38_0
+#5 97.27 Linking setuptools-84.0.0-pyh332efcf_0
+#5 97.31 Linking wheel-0.48.0-pyhd8ed1ab_0
+#5 97.32 Linking pip-26.2.1-pyh8b19718_0
+#5 97.38 Linking snpeff-5.2-hdfd78af_3
+#5 97.39 Linking gatk4-4.6.2.0-py310hdfd78af_1
+#5 97.39 Linking fastqc-0.13.0-hdfd78af_0
+#5 98.03 
+#5 98.03 Transaction finished
+#5 98.03 
+#5 98.09 Collect information..
+#5 98.09 Cleaning index cache..
+#5 98.10 Cleaning lock files..
+#5 98.10   Package file                                           Size
+#5 98.10 ───────────────────────────────────────────────────────────────
+#5 98.10   /opt/conda/pkgs
+#5 98.10 ───────────────────────────────────────────────────────────────
+#5 98.10 
+#5 98.10   _openmp_mutex-4.5-20_gnu.conda                         29kB
+#5 98.10   alsa-lib-1.2.16.1-h7cc23a3_1.conda                    595kB
+#5 98.10   bash-5.2.37-h4be8908_0.conda                            2MB
+#5 98.10   bcftools-1.24-h118bc1c_4.conda                        965kB
+#5 98.10   bwa-0.7.19-h577a1d6_1.tar.bz2                         654kB
+#5 98.10   bzip2-1.0.8-hda65f42_10.conda                         258kB
+#5 98.10   c-ares-1.34.8-hebe6cf0_2.conda                        229kB
+#5 98.10   ca-certificates-2026.7.22-hbd8a1cb_0.conda            132kB
+#5 98.10   cairo-1.18.6-h3c89d7e_0.conda                           1MB
+#5 98.10   coreutils-9.12-hebe6cf0_0.conda                         3MB
+#5 98.10   fastqc-0.13.0-hdfd78af_0.conda                         13MB
+#5 98.10   font-ttf-dejavu-sans-mono-2.37-hab24e00_0.tar.bz2     397kB
+#5 98.10   font-ttf-inconsolata-3.000-h77eed37_0.tar.bz2          97kB
+#5 98.10   font-ttf-source-code-pro-2.038-h77eed37_0.tar.bz2     701kB
+#5 98.10   font-ttf-ubuntu-0.83-h77eed37_3.conda                   2MB
+#5 98.10   fontconfig-2.18.3-h4db4eae_1.conda                    296kB
+#5 98.10   fonts-conda-ecosystem-1-0.tar.bz2                       4kB
+#5 98.10   fonts-conda-forge-1-hc364b38_1.conda                    4kB
+#5 98.10   gatk4-4.6.2.0-py310hdfd78af_1.conda                   392MB
+#5 98.10   giflib-6.1.3-hebe6cf0_2.conda                          86kB
+#5 98.10   graphite2-1.3.15-h54a6638_1.conda                     103kB
+#5 98.10   gsl-2.6-he838d99_2.tar.bz2                              3MB
+#5 98.10   htslib-1.24-ha79157c_0.conda                            1MB
+#5 98.10   icu-78.3-py310h44b86e0_2.conda                         14MB
+#5 98.10   keyutils-1.6.3-h7cc23a3_1.conda                       135kB
+#5 98.10   krb5-1.22.2-hbc21106_2.conda                            1MB
+#5 98.10   lcms2-2.19.1-h9073bf1_3.conda                         254kB
+#5 98.10   ld_impl_linux-64-2.46.1-default_hbd61a6d_103.conda    742kB
+#5 98.10   lerc-4.2.0-hdb68285_0.conda                           271kB
+#5 98.10   libblas-3.11.0-11_h4a7cf45_openblas.conda              18kB
+#5 98.10   libcblas-3.11.0-11_h0358290_openblas.conda             18kB
+#5 98.10   libcups-2.3.3-h7a8fb5f_6.conda                          5MB
+#5 98.10   libcurl-8.23.0-ha042cf0_0.conda                       506kB
+#5 98.10   libdeflate-1.25-hd45a770_1.conda                       74kB
+#5 98.10   libedit-3.1.20260512-pl5321h373387f_0.conda           136kB
+#5 98.10   libev-4.33-h280c20c_3.conda                            43kB
+#5 98.10   libexpat-2.8.5-hd2095e1_0.conda                        78kB
+#5 98.10   libffi-3.7.0-h81df57d_1.conda                          68kB
+#5 98.10   libfreetype-2.14.3-ha770c72_2.conda                     8kB
+#5 98.10   libfreetype6-2.14.3-h5e6c136_2.conda                  388kB
+#5 98.10   libgcc-16.2.0-ha9f2e26_7.conda                          1MB
+#5 98.10   libgcc-ng-16.2.0-h69a702a_7.conda                      29kB
+#5 98.10   libgfortran-16.2.0-h69a702a_7.conda                    29kB
+#5 98.10   libgfortran5-16.2.0-h6b99dfc_7.conda                    3MB
+#5 98.10   libglib-2.90.0-h569388d_0.conda                         5MB
+#5 98.10   libgomp-16.2.0-he0feb66_7.conda                       641kB
+#5 98.10   libharfbuzz-14.6.0-h23af247_2.conda                     1MB
+#5 98.10   libiconv-1.18-h0cb94f2_3.conda                        789kB
+#5 98.10   libjpeg-turbo-3.2.0-hb03c661_1.conda                  650kB
+#5 98.10   liblzma-5.8.3-hb03c661_1.conda                        113kB
+#5 98.10   liblzma-devel-5.8.3-hb03c661_1.conda                  492kB
+#5 98.10   libnghttp2-1.68.1-h74cf4be_1.conda                    650kB
+#5 98.10   libnsl-2.0.1-hb9d3cd8_1.conda                          34kB
+#5 98.10   libopenblas-0.3.34-pthreads_hf13c14d_2.conda            7MB
+#5 98.10   libpng-1.6.59-h922cc85_0.conda                        317kB
+#5 98.10   libpsl-0.23.1-hd9e3e90_1.conda                         73kB
+#5 98.10   libsqlite-3.54.0-h13e7031_1.conda                     984kB
+#5 98.10   libssh2-1.11.1-h6154650_1.conda                       306kB
+#5 98.10   libstdcxx-16.2.0-h934c35e_7.conda                       7MB
+#5 98.10   libtiff-4.7.2-hcc2c06a_1.conda                        460kB
+#5 98.10   libuuid-2.42.4-hcfc3c73_0.conda                        34kB
+#5 98.10   libwebp-base-1.6.0-hd42ef1d_1.conda                   428kB
+#5 98.10   libxcb-1.17.0-hb83e432_2.conda                        395kB
+#5 98.10   libxcrypt-4.4.38-h280c20c_0.conda                     102kB
+#5 98.10   libzlib-1.3.2-h25fd6f3_3.conda                         64kB
+#5 98.10   ncurses-6.6-hdb14827_1.conda                          911kB
+#5 98.10   openjdk-25.0.2-h1602c4f_26.conda                      123MB
+#5 98.10   openssl-3.6.5-h781a0a9_0.conda                          3MB
+#5 98.10   packaging-26.3-pyhc364b38_0.conda                     116kB
+#5 98.10   pcre2-10.47-h8b3dc9c_1.conda                            1MB
+#5 98.10   perl-5.44.0-1_h7cc23a3_perl5.conda                     11MB
+#5 98.10   pip-26.2.1-pyh8b19718_0.conda                           1MB
+#5 98.10   pixman-0.46.4-h54a6638_3.conda                        377kB
+#5 98.10   procps-ng-4.0.6-h18c060e_0.conda                      594kB
+#5 98.10   pthread-stubs-0.4-h7cc23a3_1004.conda                  10kB
+#5 98.10   python-3.10.22-h267e890_0_cpython.conda                25MB
+#5 98.10   readline-8.3-hd6e31c0_1.conda                         349kB
+#5 98.10   samtools-1.24-h9dcdb79_1.conda                        504kB
+#5 98.10   setuptools-84.0.0-pyh332efcf_0.conda                  524kB
+#5 98.10   snpeff-5.2-hdfd78af_3.conda                            27MB
+#5 98.10   tk-8.6.13-noxft_h1df4ec4_4.conda                        4MB
+#5 98.10   tzdata-2026c-h151e31d_0.conda                         119kB
+#5 98.10   wheel-0.48.0-pyhd8ed1ab_0.conda                        35kB
+#5 98.10   xorg-libice-1.1.2-h280c20c_0.conda                     63kB
+#5 98.10   xorg-libsm-1.2.6-h0d788c3_1.conda                      31kB
+#5 98.10   xorg-libx11-1.8.13-he1eb515_1.conda                   840kB
+#5 98.10   xorg-libxau-1.0.12-h7cc23a3_2.conda                    19kB
+#5 98.10   xorg-libxdmcp-1.1.5-h7cc23a3_2.conda                   23kB
+#5 98.10   xorg-libxext-1.3.7-h7cc23a3_1.conda                    53kB
+#5 98.10   xorg-libxfixes-6.0.2-h7cc23a3_1.conda                  21kB
+#5 98.10   xorg-libxi-1.8.3-h7cc23a3_1.conda                      49kB
+#5 98.10   xorg-libxrandr-1.5.5-h7cc23a3_1.conda                  31kB
+#5 98.10   xorg-libxrender-0.9.12-hb03c661_1.conda                35kB
+#5 98.10   xorg-libxt-1.3.1-h7cc23a3_1.conda                     384kB
+#5 98.10   xorg-libxtst-1.2.5-h7cc23a3_4.conda                    35kB
+#5 98.10   xz-5.8.3-ha02ee65_1.conda                              24kB
+#5 98.10   xz-gpl-tools-5.8.3-ha02ee65_1.conda                    40kB
+#5 98.10   xz-tools-5.8.3-hb03c661_1.conda                        96kB
+#5 98.10   zlib-1.3.2-h25fd6f3_3.conda                            96kB
+#5 98.10   zstd-1.5.7-hb78ec9c_7.conda                           601kB
+#5 98.10 
+#5 98.10   /home/mambauser/.mamba/pkgs
+#5 98.10 ───────────────────────────────────────────────────────────────
+#5 98.10 
+#5 98.10 
+#5 98.10   
+#5 98.10 ───────────────────────────────────────────────────────────────
+#5 98.10 
+#5 98.10   Total size:                                           677MB
+#5 98.10 Cleaning tarballs..
+#5 98.20 Cleaning packages..
+#5 DONE 98.6s
+
+#6 [3/4] RUN snpEff download -v GRCh38.105
+#6 1.182 00:00:00 SnpEff version SnpEff 5.2 (build 2023-09-29 06:17), by Pablo Cingolani
+#6 1.182 00:00:00 Command: 'download'
+#6 1.182 00:00:00 Reading configuration file 'snpEff.config'. Genome: 'GRCh38.105'
+#6 1.183 00:00:00 Reading config file: /tmp/snpEff.config
+#6 1.183 00:00:00 Reading config file: /opt/conda/share/snpeff-5.2-3/snpEff.config
+#6 2.317 00:00:01 done
+#6 2.318 00:00:01 Downloading database for 'GRCh38.105'
+#6 2.327 00:00:01 Downloading from 'https://snpeff-public.s3.amazonaws.com/databases/v5_2/snpEff_v5_2_GRCh38.105.zip' to local file '/tmp/snpEff_v5_2_GRCh38.105.zip'
+#6 2.426 00:00:01 Connecting to https://snpeff-public.s3.amazonaws.com/databases/v5_2/snpEff_v5_2_GRCh38.105.zip
+#6 2.435 00:00:01 Connecting to https://snpeff-public.s3.amazonaws.com/databases/v5_2/snpEff_v5_2_GRCh38.105.zip, using proxy: false
+#6 4.844 00:00:03 ERROR while connecting to https://snpeff-public.s3.amazonaws.com/databases/v5_2/snpEff_v5_2_GRCh38.105.zip
+#6 4.845 00:00:03 Downloading from 'https://snpeff-public.s3.amazonaws.com/databases/v5_0/snpEff_v5_0_GRCh38.105.zip' to local file '/tmp/snpEff_v5_0_GRCh38.105.zip'
+#6 4.845 00:00:03 Connecting to https://snpeff-public.s3.amazonaws.com/databases/v5_0/snpEff_v5_0_GRCh38.105.zip
+#6 4.845 00:00:03 Connecting to https://snpeff-public.s3.amazonaws.com/databases/v5_0/snpEff_v5_0_GRCh38.105.zip, using proxy: false
+#6 5.544 00:00:04 ERROR while connecting to https://snpeff-public.s3.amazonaws.com/databases/v5_0/snpEff_v5_0_GRCh38.105.zip
+#6 5.544 00:00:04 Downloading from 'https://snpeff-public.s3.amazonaws.com/databases/v5_1/snpEff_v5_1_GRCh38.105.zip' to local file '/tmp/snpEff_v5_1_GRCh38.105.zip'
+#6 5.544 00:00:04 Connecting to https://snpeff-public.s3.amazonaws.com/databases/v5_1/snpEff_v5_1_GRCh38.105.zip
+#6 5.544 00:00:04 Connecting to https://snpeff-public.s3.amazonaws.com/databases/v5_1/snpEff_v5_1_GRCh38.105.zip, using proxy: false
+#6 6.430 00:00:05 Local file name: '/tmp/snpEff_v5_1_GRCh38.105.zip'
+#6 8.005 ...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................00:02:06 
+#6 128.1 00:02:06 Download finished. Total 627276234 bytes.
+#6 128.1 00:02:06 Extracting file 'data/GRCh38.105/pwms.bin'
+#6 128.1 00:02:06 Creating local directory: '/opt/conda/share/snpeff-5.2-3/./data/GRCh38.105'
+#6 128.1 00:02:06 Extracting file 'data/GRCh38.105/sequence.1.bin'
+#6 128.2 00:02:07 Extracting file 'data/GRCh38.105/sequence.10.bin'
+#6 128.2 00:02:07 Extracting file 'data/GRCh38.105/sequence.11.bin'
+#6 128.3 00:02:07 Extracting file 'data/GRCh38.105/sequence.12.bin'
+#6 128.5 00:02:07 Extracting file 'data/GRCh38.105/sequence.13.bin'
+#6 128.5 00:02:07 Extracting file 'data/GRCh38.105/sequence.14.bin'
+#6 128.6 00:02:07 Extracting file 'data/GRCh38.105/sequence.15.bin'
+#6 128.7 00:02:07 Extracting file 'data/GRCh38.105/sequence.16.bin'
+#6 128.8 00:02:07 Extracting file 'data/GRCh38.105/sequence.17.bin'
+#6 128.9 00:02:07 Extracting file 'data/GRCh38.105/sequence.18.bin'
+#6 129.0 00:02:07 Extracting file 'data/GRCh38.105/sequence.19.bin'
+#6 129.1 00:02:07 Extracting file 'data/GRCh38.105/sequence.2.bin'
+#6 129.3 00:02:08 Extracting file 'data/GRCh38.105/sequence.20.bin'
+#6 129.4 00:02:08 Extracting file 'data/GRCh38.105/sequence.21.bin'
+#6 129.4 00:02:08 Extracting file 'data/GRCh38.105/sequence.22.bin'
+#6 129.5 00:02:08 Extracting file 'data/GRCh38.105/sequence.3.bin'
+#6 129.6 00:02:08 Extracting file 'data/GRCh38.105/sequence.4.bin'
+#6 129.8 00:02:08 Extracting file 'data/GRCh38.105/sequence.5.bin'
+#6 129.9 00:02:08 Extracting file 'data/GRCh38.105/sequence.6.bin'
+#6 130.1 00:02:08 Extracting file 'data/GRCh38.105/sequence.7.bin'
+#6 130.3 00:02:09 Extracting file 'data/GRCh38.105/sequence.8.bin'
+#6 130.5 00:02:09 Extracting file 'data/GRCh38.105/sequence.9.bin'
+#6 130.6 00:02:09 Extracting file 'data/GRCh38.105/sequence.X.bin'
+#6 130.7 00:02:09 Extracting file 'data/GRCh38.105/sequence.Y.bin'
+#6 130.7 00:02:09 Extracting file 'data/GRCh38.105/sequence.bin'
+#6 130.7 00:02:09 Extracting file 'data/GRCh38.105/snpEffectPredictor.bin'
+#6 132.0 00:02:10 Extracting file 'data/GRCh38.105/cytoBand.txt.gz'
+#6 132.0 00:02:10 Unzip: OK
+#6 132.1 00:02:10 Deleted local file '/tmp/snpEff_v5_1_GRCh38.105.zip'
+#6 132.1 00:02:10 Done
+#6 132.1 00:02:10 Done.
+#6 DONE 132.3s
+
+#7 [4/4] WORKDIR /work
+#7 DONE 0.1s
+
+#8 exporting to image
+#8 exporting layers
+#8 exporting layers 95.4s done
+#8 exporting manifest sha256:cb3ae1e3577a09affaf1f6f62d2f4ca30c3ce474ad5bc59d8770505c29b34d79 0.0s done
+#8 exporting config sha256:98a08a4a9bd13a1e5cf2375278a1eec337252cbcb0f187d52cb99f304e29ab0b 0.0s done
+#8 exporting attestation manifest sha256:a981f53ae441cdd2f1490fc1058290ffb5e64b2e4b0e44d74f28653730b1fa5b 0.0s done
+#8 exporting manifest list sha256:7c817132ef568024a0f62b1729b73df70b2d201781c4200e3a84adad9144fbfd 0.0s done
+#8 naming to docker.io/library/bi131-week3:latest done
+#8 unpacking to docker.io/library/bi131-week3:latest
+#8 unpacking to docker.io/library/bi131-week3:latest 88.5s done
+#8 DONE 184.2s
