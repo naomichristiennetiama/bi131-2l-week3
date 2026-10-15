@@ -1,0 +1,9 @@
+Raw variants:      14456
+Filtered-out:      312  (raw 14456 - PASS 14144; see breakdown below)
+PASS variants:     14144
+Filter breakdown (FILTER column):
+    282 HighSOR
+      4 HighSOR;LowMQ
+     24 LowMQ
+      2 LowQD
+  14144 PASS
