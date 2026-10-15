@@ -1,0 +1,6 @@
+CHROM	POS	REF	ALT	QUAL	GENE	CONSEQUENCE	IMPACT
+chr21	10462834	A	G	142.64	BAGE2	splice_acceptor_variant&intron_variant	HIGH
+chr21	32772274	T	G	200.97	C21orf62-AS1	splice_donor_variant&intron_variant	HIGH
+chr21	33576378	G	GA	247.98	SON	frameshift_variant	HIGH
+chr21	33931469	A	G	44.64	ENSG00000249209	splice_donor_variant&intron_variant	HIGH
+chr21	42388478	G	T	50.64	TMPRSS3	stop_gained	HIGH
