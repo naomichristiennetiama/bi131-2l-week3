@@ -1,0 +1,7 @@
+# large data, regenerated or re-downloaded from the course Google Drive
+data/*.fastq.gz
+reference/*
+results/aligned/*.bam
+results/aligned/*.bai
+results/aligned/*.bwt
+*.zip

@@ -1,0 +1,4 @@
+--- Git ---
+git version 2.53.0
+--- Docker ---
+Docker version 29.7.2, build a7dcaa6

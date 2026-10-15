@@ -1,0 +1,17 @@
+Activity: BI131-2L Laboratory Activity 3
+Student number: 2022137265
+Thu Oct 15 12:23:53 PST 2026
+Working directory: /home/naomichristienne/bi131-2l-week3
+--- OS ---
+PRETTY_NAME="Ubuntu 26.04 LTS"
+NAME="Ubuntu"
+VERSION_ID="26.04"
+--- RAM ---
+               total        used        free      shared  buff/cache   available
+Mem:           4.8Gi       835Mi       2.0Gi        50Mi       2.2Gi       4.0Gi
+Swap:          8.0Gi          0B       8.0Gi
+--- CPU count ---
+4
+--- Disk ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdf       1007G  2.0G  954G   1% /
