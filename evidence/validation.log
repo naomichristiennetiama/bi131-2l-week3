@@ -1,0 +1,24 @@
+# Validation log, 2026-10-15T14:04:53+08:00
+## Required files exist and are non-empty
+OK      reference/chr21.fa
+OK      reference/chr21.fa.fai
+OK      reference/chr21.dict
+OK      results/aligned/sample1.marked.bam
+OK      results/aligned/sample1.marked.bam.bai
+OK      results/variants/sample1.pass.vcf.gz
+OK      results/annotation/sample1.annotated.vcf.gz
+OK      results/annotation/sample1.annotated.vcf.gz.csi
+OK      results/annotation/sample1.annotated.tsv
+OK      results/igv-review.tsv
+OK      evidence/dataset-sha256.txt
+OK      evidence/troubleshooting.tsv
+## Dataset checksums re-verified
+data/chr21_R1_001.fastq.gz: OK
+data/chr21_R2_001.fastq.gz: OK
+reference/chr21.fa: OK
+## BAM and VCF readability (inside bi131-week3)
+OK samtools quickcheck BAM
+chr21	46709983	2491212	3
+*	0	0	4
+annotated VCF records: 14144
+PASS VCF records: 14144
