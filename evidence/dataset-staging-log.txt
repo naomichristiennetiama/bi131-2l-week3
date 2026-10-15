@@ -1,0 +1,29 @@
+== Dataset staging log: Thu Oct 15 12:31:17 PST 2026 ==
+--- sha256sum -c MANIFEST.sha256 (run in package directory) ---
+reads/chr21_R1_001.fastq.gz: OK
+reads/chr21_R2_001.fastq.gz: OK
+chr21.fa: OK
+exit status: 0
+
+--- Files copied into data/ and reference/ ---
+data:
+total 285192
+-rw-r--r-- 1 naomichristienne naomichristienne 146021570 Oct 15 12:31 chr21_R1_001.fastq.gz
+-rw-r--r-- 1 naomichristienne naomichristienne 146012333 Oct 15 12:31 chr21_R2_001.fastq.gz
+
+reference:
+total 46536
+-rw-r--r-- 1 naomichristienne naomichristienne       97 Oct 15 12:31 chr21.dict
+-rw-r--r-- 1 naomichristienne naomichristienne 47644190 Oct 15 12:31 chr21.fa
+-rw-r--r-- 1 naomichristienne naomichristienne       23 Oct 15 12:31 chr21.fa.fai
+--- gzip -t (silent output means the file is intact) ---
+R1 gzip OK
+R2 gzip OK
+--- First read header of each file (sample/pairing check) ---
+@SR.1:chr21:M:9887571-9887800
+@SR.1:chr21:M:9887571-9887800
+--- Reference header and index ---
+>chr21
+chr21	46709983	7	50	51
+@HD	VN:1.6
+@SQ	SN:chr21	LN:46709983	M5:2f45a3455007b7e271509161e52954a9	UR:file:///work/chr21.fa
